@@ -1,9 +1,48 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
-    <ActionBar title="My App" icon="" />
 
-    <StackLayout class="p-20">
-        <Label text="Tap the button" class="h1 text-center" />
-        <Button text="TAP" tap="{{ onTap }}" class="-primary" />
-        <Label text="{{ message }}" class="h2 text-center" textWrap="true" />
-    </StackLayout>
+    <AbsoluteLayout>
+
+        <!-- Coffee beans image -->
+        <Image
+            src="~/images/coffeebeans.jpg"
+            stretch="aspectFill"
+            top="0"
+            left="0"
+            height="60%"
+            width="100%" />
+
+        <!-- White container -->
+        <StackLayout
+            backgroundColor="#FFFFFF"
+            top="400"
+            left="0"
+            width="100%"
+            height="100%"
+            borderTopLeftRadius="20"
+            borderTopRightRadius="20"
+            padding="30">
+
+            <!-- Text and the button -->
+
+            <Label
+                text="Coffee beans"
+                fontSize="30"
+                fontWeight="bold" />
+            <Label
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                fontSize="15"
+                textWrap="true" />
+            <Button
+                text="Buy a beans bag"
+                backgroundColor="#27120E"
+                color="#FFFFFF"
+                fontWeight="bold"
+                borderRadius="10"
+                margin="30,0,0,0" />
+
+
+        </StackLayout>
+
+    </AbsoluteLayout>
+
 </Page>
